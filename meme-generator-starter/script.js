@@ -6,6 +6,17 @@ function getImage() {
     imageBox.src = imageURL;
     let wrapper = document.getElementById('meme-image-wrapper');
     wrapper.appendChild(imageBox);
+
+    document.getElementById("meme-builder").style.display = "block";
 }
 
-// up to page 51
+function addTopText() {
+    let topText = document.getElementById("top-text-input").value;
+    document.getElementById("top-text").innerText = topText;
+}
+// fix code below
+function addBottomText() {
+    let bottomText = document.getElementById("bottom-text-input").value;
+    document.getElementById("bottom-text").innerText = bottomText;
+}
+// code above to be fixed
